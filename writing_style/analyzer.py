@@ -87,19 +87,3 @@ def analyze(text):
 
 
 # cosine distance from works of shakespeare, OTHERS in public domain!
-
-def main():
-
-    criteria = {
-        'average_word_lengths': average_word_lengths,
-        'stdev_word_lengths': stdev_word_lengths,
-        'average_sentence_lengths': average_sentence_lengths,
-        'stdev_sentence_lengths': stdev_sentence_lengths,
-    }
-
-    for name, function in criteria.items():
-        print(name, function(INPUT_TEXT))
-    print()
-
-if __name__ == '__main__':
-    main()
