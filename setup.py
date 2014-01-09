@@ -3,24 +3,20 @@ import os
 from setuptools import setup
 
 
-def read(fname):
-    return open(os.path.join(os.path.dirname(__file__), fname)).read()
-
-
 def run_setup():
     setup(
-        name='save_ipython_variables',
-        version='0.0.4',
-        description='A tool for saving your IPython variables to disk.',
+        name='writing_style',
+        version='0.0.2',
+        description='Analyze text',
         keywords = '',
-        url='https://github.com/sergeio/save_ipython_variables',
+        url='https://github.com/sergeio/writing_style',
         author='Sergei Orlov',
         author_email='pypi@sergeiorlov.com',
         license='BSD',
-        packages=['save_ipython_variables'],
+        packages=['writing_style'],
         install_requires=[''],
         test_suite='tests',
-        long_description=read('README.md'),
+        long_description='',
         classifiers=[
             'Development Status :: 2 - Pre-Alpha',
             'Intended Audience :: Developers',

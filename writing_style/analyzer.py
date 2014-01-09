@@ -20,7 +20,7 @@ Maybe I should learn journalists' shorthand.
 def average(numbers):
     # maybe rewrite this to not materialize the array
     numbers = list(numbers)
-    return sum(numbers) / (len(numbers) or 1)
+    return float(sum(numbers)) / (len(numbers) or 1)
 
 
 def stdev(numbers):
@@ -75,6 +75,15 @@ def punctuation_ratios(text):
         counts[key] = counts[key] / total_punctuation
 
     return dict(counts)
+
+
+def analyze(text):
+    return {
+        'average_word_lengths': average_word_lengths(text),
+        'stdev_word_lengths': stdev_word_lengths(text),
+        'average_sentence_lengths': average_sentence_lengths(text),
+        'stdev_sentence_lengths': stdev_sentence_lengths(text),
+    }
 
 
 # cosine distance from works of shakespeare, OTHERS in public domain!
